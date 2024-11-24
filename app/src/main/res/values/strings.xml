@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">CalculadoraSalario</string>
+
+    <!--OPCIONES DE LOS SPINNERS -->
+    <!--Grupo profesional-->
+        <string-array name="grupo_profesional_array">
+            <item>Directivo</item>
+            <item>Técnico</item>
+            <item>Administrativo</item>
+            <item>Operario</item>
+            <item>Otro</item>
+        </string-array>
+
+    <!--Grado discapacidad-->
+    <string-array name="grado_discapacidad_array">
+        <item>Sin discapacidad</item>
+        <item>Menor del 33%</item>
+        <item>Mayor del 33%</item>
+    </string-array>
+
+    <!--Estado civil-->
+    <string-array name="estado_civil_array">
+        <item>Soltero</item>
+        <item>Divorciado</item>
+        <item>Viudo</item>
+    </string-array>
+
+</resources>

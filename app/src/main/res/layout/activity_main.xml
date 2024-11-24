@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Salario Bruto -->
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:background="#3F51B5"
+            android:padding="10dp"
+            android:text="Calculadora de salario neto"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp" />
+
+        <EditText
+            android:id="@+id/etSalarioBruto"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginBottom="5dp"
+            android:hint="Salario Bruto Anual"
+            android:inputType="numberDecimal" />
+
+        <!-- Número de Pagas -->
+        <EditText
+            android:id="@+id/etNumPagas"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginBottom="5dp"
+            android:hint="Número de Pagas"
+            android:inputType="number" />
+
+        <!-- Edad -->
+        <EditText
+            android:id="@+id/etEdad"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginBottom="5dp"
+            android:hint="Edad"
+            android:inputType="number"
+            tools:ignore="HardcodedText" />
+
+        <!-- Grupo Profesional -->
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Grupo Profesional"
+            android:textSize="18sp" />
+
+        <Spinner
+            android:id="@+id/spGrupoProfesional"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginBottom="5dp"
+            android:entries="@array/grupo_profesional_array" />
+
+        <!-- Grado de Discapacidad -->
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Grado de discapacidad"
+            android:textSize="18sp" />
+
+        <Spinner
+            android:id="@+id/spGradoDiscapacidad"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginBottom="5dp"
+            android:entries="@array/grado_discapacidad_array" />
+
+        <!-- Estado Civil -->
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Estado Civil"
+            android:textSize="18sp" />
+
+        <Spinner
+            android:id="@+id/spEstadoCivil"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:entries="@array/estado_civil_array" />
+
+        <!-- Número de Hijos -->
+        <EditText
+            android:id="@+id/etNumHijos"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginBottom="5dp"
+            android:hint="Número de Hijos"
+            android:inputType="number" />
+
+        <!-- Botón para ir a la siguiente vista -->
+        <Button
+            android:id="@+id/btnCalcular"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Calcular"
+            android:textColorLink="#3F51B5"
+            app:rippleColor="#3F51B5" />
+
+    </LinearLayout>
+</ScrollView>
